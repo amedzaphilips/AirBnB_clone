@@ -1,2 +1,2 @@
-# AirBnB_clone - The Consol
+# AirBnB_clone - The Console
 Player 1 ready
