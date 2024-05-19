@@ -23,7 +23,7 @@ Create a new object (ex: a new User or a new Place)\
 Retrieve an object from a file, a database etc…\
 Do operations on objects (count, compute stats, etc…)\
 Update attributes of an object\
-Destroy an object\
+Destroy an object
 
 ### Resources
 Read or watch:
@@ -33,11 +33,11 @@ cmd module in depth\
 packages concept page\
 uuid module\
 datetime\
-unittest module\
---->args/kwargs\
--->Python test cheatsheet\
-->cmd module wiki page\
->python unittest
+^unittest module\
+%args/kwargs\
+@@@Python test cheatsheet\
+@@cmd module wiki page\
+@python unittest
 
 ## The console
 create your data model
