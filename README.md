@@ -36,10 +36,10 @@ Destroy an object
 ## Resources
 Read or watch:
 
-\\cmd module
-\\cmd module in depth
+\cmd module\
+\\cmd module in depth\\
 \\packages concept page
-\uuid module
+\uuid module\
 datetime
 unittest module
 args/kwargs
