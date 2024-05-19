@@ -18,4 +18,11 @@ class TestBaseModel(unittest.TestCase):
         base = BaseModel()
         base.save()
         self.assertNotEqual(base.created_at, base.updated_at)
+    
+    def test_str_rep(self):
+        base = BaseModel()
+        self.assertIsIsnstance(base, object)
 
+    def test_id_string(self):
+        base = BaseModel()
+        self.assertIsInstance(base.id, str)
