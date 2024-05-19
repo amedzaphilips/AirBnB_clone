@@ -33,11 +33,11 @@ cmd module in depth\
 packages concept page\
 uuid module\
 datetime\
-^unittest module\
-%args/kwargs\
-@@@Python test cheatsheet\
-@@cmd module wiki page\
-@python unittest
+unittest module\
+args/kwargs\
+Python test cheatsheet\
+cmd module wiki page\
+python unittest
 
 ## The console
 create your data model
@@ -51,3 +51,28 @@ The first piece is to manipulate a powerful storage system. This storage engine 
 This abstraction will also allow you to change the type of storage easily without updating all of your codebase.
 
 The console will be a tool to validate this storage engine
+
+
+__Example__
+
+	import cmd
+
+	class HelloWorld(cmd.Cmd):
+	"""Simple command processor example."""
+
+	def do_greet(self, person):
+	if person:
+        	print "hi,", person
+	else:
+		print 'hi'
+    
+	def help_greet(self):
+		print '\n'.join([ 'greet [person]',
+                           'Greet the named person',
+                           ])
+
+	def do_EOF(self, line):
+	return True
+
+	if __name__ == '__main__':
+		HelloWorld().cmdloop()
