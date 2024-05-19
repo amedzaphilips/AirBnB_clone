@@ -21,7 +21,7 @@ class TestBaseModel(unittest.TestCase):
     
     def test_str_rep(self):
         base = BaseModel()
-        self.assertIsIsnstance(base, object)
+        self.assertIsInstance(base, object)
 
     def test_id_string(self):
         base = BaseModel()
