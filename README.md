@@ -34,10 +34,10 @@ packages concept page\
 uuid module\
 datetime\
 unittest module\
-args/kwargs\
-Python test cheatsheet\
-cmd module wiki page\
-python unittest\
+--->args/kwargs\
+-->Python test cheatsheet\
+->cmd module wiki page\
+>python unittest
 
 ## The console
 create your data model
