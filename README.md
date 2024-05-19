@@ -2,7 +2,7 @@
 Player 1 ready
 
 ## The console
-'create your data model'
+`create your data model`
 
 manage (create, update, destroy, etc) objects via a console / command interpreter
 
