@@ -23,7 +23,7 @@ class TestBaseModel(unittest.TestCase):
         base = BaseModel()
         base.save()
         self.assertNotEqual(base.created_at, base.updated_at)
-    
+
     def test_str_rep(self):
         """ Test if base inherits from object """
         base = BaseModel()
