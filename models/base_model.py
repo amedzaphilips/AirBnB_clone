@@ -8,7 +8,7 @@ class BaseModel:
     """a class BaseModel that defines all common
     attributes/methods for other classes"""
 
-    def __init__(self):
+    def __init__(self, *args, kwargs):
         """Instantiatiing with id
         Args:
             string id - assign with an uuid when an instance is created"""
