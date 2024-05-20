@@ -8,7 +8,7 @@ class BaseModel:
     """a class BaseModel that defines all common
     attributes/methods for other classes"""
 
-    def __init__(self, *args, kwargs):
+    def __init__(self, *args, **kwargs):
         """Instantiatiing with id
         Args:
             string id - assign with an uuid when an instance is created"""
@@ -22,8 +22,8 @@ class BaseModel:
                     self.__dict__[key] = value
         else:
             self.id = str(uuid.uuid4())
-            self.created_at = datetime.datetime.now()
-            self.update_at = datetime.datetime.now()
+            self.created_at = datetime.now()
+            self.update_at = datetime.now()
 
     def __str__(self):
         """should print:
@@ -34,7 +34,7 @@ class BaseModel:
     def save(self):
         """updates the public instance attribute updated_at
         with the current datetime"""
-        self.updated_at = datetime.datetime.now()
+        self.updated_at = datetime.now()
 
     def to_dict(self):
         """return a dictionary containing __class__"""
