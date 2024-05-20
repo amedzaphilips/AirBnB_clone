@@ -12,6 +12,9 @@ class BaseModel:
         """Instantiatiing with id
         Args:
             string id - assign with an uuid when an instance is created"""
+        self.id = str(uuid.uuid4())
+        self.created_at = datetime.now()
+        self.update_at = datetime.now()
         if len(kwargs) != 0:
             for key, value in kwargs.items():
                 if key == "__class__":
@@ -20,10 +23,6 @@ class BaseModel:
                     self.__dict__[key] = datetime.fromisoformat(value)
                 else:
                     self.__dict__[key] = value
-        else:
-            self.id = str(uuid.uuid4())
-            self.created_at = datetime.now()
-            self.update_at = datetime.now()
 
     def __str__(self):
         """should print:
