@@ -54,3 +54,8 @@ class TestBaseModel(unittest.TestCase):
     def test_no_arg_to_BaseModel(self):
         """test if no args"""
         self.assertEqual(BaseModel, type(BaseModel()))
+
+    def test_save(self):
+        base = BaseModel()
+        with self.assertRaises(TypeError):
+            base.save(None)
