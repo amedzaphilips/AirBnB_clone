@@ -40,6 +40,7 @@ class TestBaseModel(unittest.TestCase):
         base = BaseModel()
         base_dict = base.to_dict()
         self.assertIsInstance(base_dict, dict)
+        self.assertEqual(base_dict, base.__dict__)
 
     def test_str(self):
         base = BaseModel()
@@ -59,3 +60,8 @@ class TestBaseModel(unittest.TestCase):
         base = BaseModel()
         with self.assertRaises(TypeError):
             base.save(None)
+
+    def test_to_dict(self):
+        base = BaseModel()
+        with self.assertRaises(TypeError):
+            base.to_dict(None)
