@@ -2,6 +2,7 @@
 """ This is a test file for the BaseModel """
 import unittest
 from models.base_model import BaseModel
+from datetime import datetime
 
 
 class TestBaseModel(unittest.TestCase):
@@ -33,3 +34,23 @@ class TestBaseModel(unittest.TestCase):
         """ Test if base is a string """
         base = BaseModel()
         self.assertIsInstance(base.id, str)
+
+    def test_dict(self):
+        """Test to_dict method"""
+        base = BaseModel()
+        base_dict = base.to_dict()
+        self.assertIsInstance(base_dict, dict)
+
+    def test_str(self):
+        base = BaseModel()
+        self.assertTrue(str(base))
+
+    def test_datetime(self):
+        """test the current date time"""
+        base = BaseModel()
+        self.assertEqual(datetime, type(base.created_at))
+        self.assertEqual(datetime, type(base.updated_at))
+        
+    def test_no_arg_to_BaseModel(self):
+        """test if no args"""
+        self.assertEqual(BaseModel, type(BaseModel()))
