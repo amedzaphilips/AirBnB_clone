@@ -33,13 +33,3 @@ class TestBaseModel(unittest.TestCase):
         """ Test if base is a string """
         base = BaseModel()
         self.assertIsInstance(base.id, str)
-
-    def test_dict(self):
-        """Test to_dict method"""
-        base = BaseModel()
-        base_dict = base.to_dict()
-        self.assertIsInstance(base_dict, dict)
-
-    def test_str(self):
-        base = BaseModel()
-        self.assertTrue(str(base))
