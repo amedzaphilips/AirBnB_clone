@@ -22,7 +22,7 @@ class FileStorage:
         """serializes __objects to the JSON file
         (path: __file_path)"""
         filename = self.__file_path
-        with open(filename, "a") as f:
+        with open(filename, "a", encoding="utf-8") as f:
             json.dump(self.__object, f)
 
     def reload(self):
@@ -32,7 +32,7 @@ class FileStorage:
         no exception should be raised)"""
         filename = self.__file_path
         try:
-            with open(filename) as f:
+            with open(filename, "r") as f:
                 self.__object = json.load(f)
         except FileNotFoundError:
             pass
