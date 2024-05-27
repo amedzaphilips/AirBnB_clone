@@ -1,5 +1,8 @@
 # Web - Static
 
+##What is the DOM
+The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, where each node in the tree corresponds to a part of the document (such as an element, attribute, or text). The DOM allows programs and scripts to dynamically access and update the content, structure, and style of documents.
+
 ## Building Your First Web Page
 If you can, imagine a time before the invention of the Internet. Websites didn’t exist, and books, printed on paper and tightly bound, were your primary source of information. It took a considerable amount of effort—and reading—to track down the exact piece of information you were after.
 
@@ -21,17 +24,15 @@ With this understanding of the difference between HTML and CSS, let’s dive int
 ### Understanding Common HTML Terms
 While getting started with HTML, you will likely encounter new—and often strange—terms. Over time you will become more and more familiar with all of them, but the three common HTML terms you should begin with are elements, tags, and attributes.
 
-#### Elements
-Elements are designators that define the structure and content of objects within a page. Some of the more frequently used elements include multiple levels of headings (identified as \<h1\> through \<h6\> elements) and paragraphs (identified as the \<p\> element); the list goes on to include the \<a\>, \<div\>, \<span\>, \<strong\>, and \<em\> elements, and many more.
+###Elements
+Elements are designators that define the structure and content of objects within a page. Some of the more frequently used elements include multiple levels of headings (identified as `<h1>` through `<h6>` elements) and paragraphs (identified as the `<p>` element); the list goes on to include the `<a>`, `<div>`, `<span>`, `<strong>`, and `<em>` elements, and many more.
 
 Elements are identified by the use of less-than and greater-than angle brackets, < >, surrounding the element name. Thus, an element will look like the following:
 
-1
-2
-`<a>`
+1	`<a>`
 
               
-Tags
+__Tags__
 The use of less-than and greater-than angle brackets surrounding an element creates what is known as a tag. Tags most commonly occur in pairs of opening and closing tags.
 
 An opening tag marks the beginning of an element. It consists of a less-than sign followed by an element’s name, and then ends with a greater-than sign; for example, `<div>`.
@@ -42,19 +43,15 @@ The content that falls between the opening and closing tags is the content of th
 
 So, anchor tags will look a bit like this:
 
-1
-2
-`<a>...</a>`
+1	`<a>...</a>`
 
               
-Attributes
+__Attributes__
 Attributes are properties used to provide additional information about an element. The most common attributes include the id attribute, which identifies an element; the class attribute, which classifies an element; the src attribute, which specifies a source for embeddable content; and the href attribute, which provides a hyperlink reference to a linked resource.
 
 Attributes are defined within the opening tag, after an element’s name. Generally attributes include a name and a value. The format for these attributes consists of the attribute name followed by an equals sign and then a quoted attribute value. For example, an <a> element including an href attribute would look like the following:
 
-1
-2
-`<a href="https://github.com/Josh-Atsu">my github</a>`
+1	`<a href="https://github.com/Josh-Atsu">my github</a>`
 
 
 ## Setting Up the HTML Document Structure
