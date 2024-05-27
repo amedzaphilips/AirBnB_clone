@@ -55,3 +55,27 @@ Attributes are defined within the opening tag, after an element’s name. Genera
 1
 2
 `<a href="https://github.com/Josh-Atsu">my github</a>`
+
+
+## Setting Up the HTML Document Structure
+HTML documents are plain text documents saved with an .html file extension rather than a .txt file extension. To begin writing HTML, you first need a plain text editor that you are comfortable using. Sadly this does not include Microsoft Word or Pages, as those are rich text editors. Two of the more popular plain text editors for writing HTML and CSS are Dreamweaver and Sublime Text. Free alternatives also include Notepad++ for Windows and TextWrangler for Mac.
+
+All HTML documents have a required structure that includes the following declaration and elements: `<!DOCTYPE html>`, `<html>`, `<head>`, and `<body>`.
+
+The document type declaration, or `<!DOCTYPE html>`, informs web browsers which version of HTML is being used and is placed at the very beginning of the HTML document. Because we’ll be using the latest version of HTML, our document type declaration is simply `<!DOCTYPE html>`. Following the document type declaration, the `<html>` element signifies the beginning of the document.
+
+Inside the `<html>` element, the `<head>` element identifies the top of the document, including any metadata (accompanying information about the page). The content inside the `<head>` element is not displayed on the web page itself. Instead, it may include the document title (which is displayed on the title bar in the browser window), links to any external files, or any other beneficial metadata.
+
+All of the visible content within the web page will fall within the `<body>` element. A breakdown of a typical HTML document structure looks like this:
+
+	<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <title>Hello World</title>
+	  </head>
+	  <body>
+	    <h1>Hello World</h1>
+	    <p>This is a web page.</p>
+	  </body>
+	</html>
