@@ -10,11 +10,3 @@ header {
     position: relative;
     left: 20px;
 }
-
-.container {
-    margin: auto;
-    max-width: 1000px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    align-content: center;
-}
