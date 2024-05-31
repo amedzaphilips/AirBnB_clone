@@ -84,29 +84,24 @@ class HBNBCommand(cmd.Cmd):
         Ex: $ update BaseModel 1234-1234-1234 email "aibnb@mail.com"""
         base = model_name.split()
         obj_all = storage.all()
-        obj = obj_all["{}.{}".format(base[0], base[1])]
         if len(base) == 0:
             print("** class name missing **")
-            return
-        if base[0] != "BaseModel":
+        elif base[0] != "BaseModel":
             print("** class doesn't exist **")
-            return
-        if len(base) == 1:
+        elif len(base) == 1:
             print("** instance id missing **")
-            return
-        if "{}.{}".format(base[0], base[1]) not in obj_all:
+        elif "{}.{}".format(base[0], base[1]) not in obj_all:
             print("** no instance found **")
-            return
-        if len(base) == 2:
+        elif len(base) == 2:
             print("** attribute name missing **")
-            return
-        if len(base) == 3:
+        elif len(base) == 3:
             print("** value missing **")
-            return
-        if "{}.{}".format(base[0], base[1]) in obj_all:
-            att_name = base[2]
-            att_value = base[3].strip('"')
-            obj.__dict__[att_name] = att_value
+        else:
+            obj = obj_all["{}.{}".format(base[0], base[1])]
+            if "{}.{}".format(base[0], base[1]) in obj_all:
+                att_name = base[2]
+                att_value = base[3].strip('"')
+                obj.__dict__[att_name] = att_value
         storage.save()
 
     def do_EOF(self, line):
