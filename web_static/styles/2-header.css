@@ -1,7 +1,6 @@
-header {
-    background-color: red;
-    height: 70px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+header{
+	position: fixed;
+	background-color : #FF0000;
+	height : 70px;
+	width : 100%
 }
